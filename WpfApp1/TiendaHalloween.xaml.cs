@@ -15,25 +15,15 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Lógica de interacción para Apartado.xaml
+    /// Lógica de interacción para TiendaHalloween.xaml
     /// </summary>
-    public partial class Apartado : Window
+    public partial class TiendaHalloween : Window
     {
-        String usuario;
-        public Apartado(String usuario)
+        public TiendaHalloween(String usuario)
         {
-            this.usuario = usuario;
             InitializeComponent();
-
-            // Muestra el texto pasado en el TextBlock
             user.Text = usuario;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            TiendaHalloween tiendaHalloween = new TiendaHalloween(usuario);
-            tiendaHalloween.Show();
-            this.Close();
-        }
     }
 }
